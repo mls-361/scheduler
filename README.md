@@ -6,4 +6,4 @@ AFAIRE.
 
 Licence MIT.
 
-Copyright (c) 2020-2021 mls-361.
+Copyright (c) 2020-2021 `mls-361`.
