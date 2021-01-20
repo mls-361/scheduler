@@ -61,6 +61,12 @@ func (s *Scheduler) AddEvent(e *Event) error {
 		return failure.New(nil).Msg("an event name cannot be empty") ///////////////////////////////////////////////////
 	}
 
+	// Pour le moment, on les élimine.
+	// Plus tard, on pourra les prendre en compte pour les activer en cours d'exécution.
+	if e.Disabled {
+		return nil
+	}
+
 	event := &event{
 		name:  e.Name,
 		data:  e.Data,
